@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+  background: linear-gradient(rgb(18, 143, 245),aqua);
+}
+.btn:hover{
+  background: linear-gradient(rgb(18, 237, 245),rgb(28, 156, 248));
+}
+
+
+
+/* Creating a hexagon Shap */
+
+.hexagon {
+   width: 200px;
+   height: 116px;
+   background-color: rgb(254, 253, 253);
+    
+   position: relative;
+   border-radius:3px;
+
+}
+.hexagon::before{
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  transform: rotate(60deg);
+  border-radius: inherit;
+
+}
+.hexagon::after{
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  transform: rotate(-60deg);
+  border-radius: inherit;
+   
+}
+
+
+/* resizing hexagon */
+
+
+
+
+@media only screen and (max-width:639px) {
+  .hexagon {
+    width: 200px;
+    height: px;
+  }
+  .hexagon::before {
+    height: inherit;
+  }
+  .hexagon::after {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+
+@media only screen and (min-width:640px) and (max-width: 767px)  {
+  .hexagon {
+    width: 130px;
+    height: 74px;
+  }
+  .hexagon::before {
+    height: inherit;
+  }
+  .hexagon::after {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hexagon {
+    width: 160px;
+    height: 91px;
+  }
+  .hexagon::before {
+    height: inherit;
+  }
+  .hexagon::after {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+/* large screens */
+@media only screen and (min-width: 1024px) {
+  .hexagon {
+    width: 200px;
+    height: 116px;
+  }
+  .hexagon::before {
+    height: inherit;
+  }
+  .hexagon::after {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+
+.myShadow{
+  box-shadow: 1px 1px 15px;
+}
+
+
+.navbarShadow{
+  box-shadow: 1px 1px 15px;
+}
+
+
+
+.skew {
+  border-bottom: 80px solid #3e92cc;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+}
+.skew2 {
+  border-bottom: 60px solid #3e92cc;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+

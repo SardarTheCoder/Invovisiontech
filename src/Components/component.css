@@ -1,0 +1,22 @@
+.text-gradient {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .bouncing-image {
+    animation: bounce 4s infinite;
+    width: 1000px;
+  }
+  
